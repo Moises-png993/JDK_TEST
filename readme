@@ -1,0 +1,42 @@
+📌 Suite de Automatizacion
+
+Este proyecto es una aplicación desarrollada en Python que permite gestionar información de clientes almacenada en un archivo JSON.
+
+📋 Requisitos Previos
+
+Antes de ejecutar el proyecto, asegúrate de tener instalado:
+
+🐍 Python 3.9 o superior
+
+Puedes verificar si tienes Python instalado ejecutando en la terminal:
+
+python --version
+
+o
+
+python3 --version
+
+Si no lo tienes instalado, descárgalo desde:
+👉 https://www.python.org/downloads/
+
+Durante la instalación en Windows, asegúrate de marcar la opción:
+✔ "Add Python to PATH"
+
+📦 Instalación del Proyecto
+
+Clona este repositorio o descarga el código fuente.
+
+Abre una terminal en la carpeta del proyecto.
+
+Instala las dependencias ejecutando:
+
+pip install -r requirements.txt
+
+Si usas pip3:
+
+pip3 install -r requirements.txt
+▶️ Cómo Ejecutar el Proyecto
+
+Desde la carpeta raíz del proyecto, ejecuta:
+
+python -m pytest -v --html=reports/report.html --self-contained-html
