@@ -85,6 +85,11 @@ class ClientsPage(BasePage):
 
     MODAL = (By.CLASS_NAME, "ant-modal")
 
+    CONTINUE_BUTTON = (
+        By.XPATH,
+        "//button[.//span[contains(text(),'Continuar')] or normalize-space()='Continuar']"
+    )
+
     def is_loaded(self):
         return self.wait.until(
             EC.visibility_of_element_located(self.TITLE)
@@ -270,6 +275,11 @@ class ClientsPage(BasePage):
             ))
         )
 
+    def wait_for_continue_button(self):
+        self.wait.until(
+            EC.element_to_be_clickable(self.CONTINUE_BUTTON)
+        ).click()
+
     def create_client(self, data):
 
         self.click_new_client()
@@ -294,4 +304,5 @@ class ClientsPage(BasePage):
         self.enter_street(data["street"])
 
         self.click_save()
+        self.wait_for_continue_button()
         self.wait_modal_to_close()

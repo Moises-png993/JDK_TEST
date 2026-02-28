@@ -26,3 +26,4 @@ def test_create_10_clients(driver: WebDriver | WebDriver):
     # Iterar clientes
     for client in clients_data:
         clients_page.create_client(client)
+    time.sleep(10)

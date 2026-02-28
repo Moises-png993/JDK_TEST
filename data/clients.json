@@ -1,10 +1,24 @@
 [
   {
     "document_type": "DUI",
-    "document_number": "061204219",
+    "document_number": "01201845-9",
     "name": "Carlos",
     "last_name": "Martinez",
-    "client_number": "1003",
+    "client_number": "1004",
+    "email": "carlos3@test.com",
+    "phone": "2222-3333",
+    "mobile": "7777-3333",
+    "department": "San Salvador",
+    "municipality": "San salvador centro",
+    "district": "Ayutuxtepeque",
+    "street": "Av. España #45"
+  },
+  {
+    "document_type": "DUI",
+    "document_number": "019587378",
+    "name": "Carlos",
+    "last_name": "Martinez",
+    "client_number": "1005",
     "email": "carlos3@test.com",
     "phone": "2222-3333",
     "mobile": "7777-3333",
